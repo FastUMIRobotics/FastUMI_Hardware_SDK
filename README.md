@@ -45,7 +45,7 @@ sdk/				  # 硬件安装包，按交付时间归档版本
    ```
    
 3. **检查FastUMI状态**
-可通过FastUMI Monitor Tool(https://github.com/FastUMIRobotics/FastUMI_Monitor_Tool)对设备采集数据进行采样分析，查看设备运行状态是否正常。
+可通过[FastUMI Monitor Tool](https://github.com/FastUMIRobotics/FastUMI_Monitor_Tool)对设备采集数据进行采样分析，查看设备运行状态是否正常。
 ---
 
 
