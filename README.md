@@ -4,7 +4,7 @@
 
 ```
 doc/				  # 硬件相关资料
-script/			  # sdk安装脚本
+scripts/			  # sdk安装脚本
 ├── install-ros1.sh              # 一键安装sdk及ros1功能包
 ├── install-ros2.sh              # 一键安装sdk及ros2功能包
 ├── install-python.sh            # 一键安装sdk及python运行环境
@@ -27,12 +27,13 @@ sdk/				  # 硬件安装包，按交付时间归档版本
 
 1. **安装SDK**
    ```bash
-   cd script
+   cd scripts
    #ros1版本(recommended)
    sudo -E bash install-ros1.sh ../sdk/XXX/XVSDK_focal_amd64_XXX.deb
    ```
    
    ```bash
+   cd scripts
    #ros2版本
    sudo -E bash install-ros2.sh ../sdk/XXX/XVSDK_jammy_amd64_XXX.deb
    ```
