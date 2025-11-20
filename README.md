@@ -26,6 +26,15 @@ vive/				      # vive
 
 ## 🚀 快速开始
 
+### 前置条件
+
+1. **ROS环境安装**
+   ```bash
+   #建议安装ROS1 neotic
+   wget http://fishros.com/install -O fishros && . fishros
+   ```
+---
+
 ## 📖 使用指南（单/双设备通用）
 
 1. **安装SDK**
@@ -57,6 +66,7 @@ vive/				      # vive
 3. **检查FastUMI状态**
 可通过[FastUMI Monitor Tool](https://github.com/FastUMIRobotics/FastUMI_Monitor_Tool)对设备采集数据进行采样分析，查看设备运行状态是否正常。
 ---
+
 
 
 ## 🔍 故障排查
