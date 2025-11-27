@@ -53,7 +53,7 @@ vive/				      # vive
 2. **连接FastUMI**
    ```bash
    cd ~/catkin_ws/
-   roslaunch xv_sdk xv_sdk_launch
+   roslaunch xv_sdk xv_sdk.launch
 
    ```
    
