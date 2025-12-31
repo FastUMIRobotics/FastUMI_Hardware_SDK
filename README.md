@@ -29,11 +29,7 @@ xv/                                   # FastUMI 核心 SDK（XV SDK & ROS 支持
 ├── sdk/                              # FastUMI 硬件 SDK 安装包（按版本归档）
 │   └── XXX/                          # SDK 版本号（以交付版本为准）
 │       ├── XVSDK_focal_amd64_XXX.deb  # Ubuntu 20.04 / ROS1
-│       └── XVSDK_jammy_amd64_XXX.deb  # Ubuntu 22.04 / ROS2
-│
-├── README.md                         # 中文 README（FastUMI SDK 总览）
-└── README_en.md                      # English README
-   
+│       └── XVSDK_jammy_amd64_XXX.deb  # Ubuntu 22.04 / ROS2   
 ```
 
 ### 文件说明
@@ -94,6 +90,7 @@ xv/                                   # FastUMI 核心 SDK（XV SDK & ROS 支持
 
 **检查：**
 删除相关进程，重新启动SDK。
+
 
 
 
