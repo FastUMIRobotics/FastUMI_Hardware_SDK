@@ -3,21 +3,36 @@
 ## 📁 Directory Structure
 
 ```
-xv/				      # fast umi
-├── doc/                             # Hardware Related Resources
-├── scripts/                         # sdk installation script
-├── install-ros1.sh                  # Installation of the sdk and ros1 Function Pack
-    ├── install-ros2.sh              # Installation of the sdk and ros2 Function Pack
-    ├── install-python.sh            # Installation of the SDK and Python Environment
-    ├── multi-support.sh             # Expand USB bandwidth to support multi-device operating environments
-├── sdk/			      # Hardware Installation Pack
-    ├── XVSDK_focal_amd64_XXX.deb    # ROS1 Version
-    ├── XVSDK_jammy_amd64_XXX.deb    # ROS2 Version
-vive/				      # vive
-├── doc/                             # vive usage profiles 
+vive/                                 # Vive tracking system resources
+├── doc/                              # Vive usage and configuration documentation
+│   ├── FastUMI_Hardware_Startup_Procedure_en.docx  # FastUMI hardware startup procedure (EN)
+│   ├── FastUMI_Hardware_Startup_Procedure_zh.docx  # FastUMI hardware startup procedure (CN)
+│   └── Vive_Usage_Guide_zh.docx                     # Vive basic usage guide
+
+xv/                                   # FastUMI Core SDK (XV SDK & ROS Support)
+├── doc/                              # FastUMI hardware, interfaces, and ROS documentation
+│   ├── README-Interfaces.md          # Hardware interfaces and data specifications
+│   ├── README-ros1.md                # ROS 1 usage guide
+│   ├── README-ros2.md                # ROS 2 usage guide
+│   ├── ros1-topic 介绍.docx          # ROS 1 topic reference
+│   └── ros2-topic 介绍.docx          # ROS 2 topic reference
+│
+├── scripts/                          # SDK installation and system configuration scripts
+│   ├── 99-xvisio.rules               # udev rules (device permission configuration)
+│   ├── README-install.md             # SDK installation instructions
+│   ├── install-ros1.sh               # One-click installation for SDK + ROS 1 packages
+│   ├── install-ros2.sh               # One-click installation for SDK + ROS 2 packages
+│   ├── install-python.sh             # Python runtime environment installation script
+│   └── multi-support.sh              # USB bandwidth expansion (required for multi-device setups)
+│
+├── sdk/                              # FastUMI hardware SDK packages (versioned by release)
+│   └── XXX/                          # SDK version directory (delivery-based)
+│       ├── XVSDK_focal_amd64_XXX.deb  # Ubuntu 20.04 / ROS 1
+│       └── XVSDK_jammy_amd64_XXX.deb  # Ubuntu 22.04 / ROS 2
+ 
 ```
 
-### 文件说明
+### Document Description
 
 | Files | Features | Use Cases |
 |------|------|---------|

@@ -3,18 +3,33 @@
 ## 📁 目录结构
 
 ```
-xv/				      # fast umi本体
-├── doc/                             # 硬件相关资料
-├── scripts/                         # sdk安装脚本
-├── install-ros1.sh                  # 一键安装sdk及ros1功能包
-    ├── install-ros2.sh              # 一键安装sdk及ros2功能包
-    ├── install-python.sh            # 一键安装sdk及python运行环境
-    ├── multi-support.sh             # 扩展usb带宽，支持多设备运行环境
-├── sdk/			      # 硬件安装包，按交付时间归档版本
-    ├── XVSDK_focal_amd64_XXX.deb    # ROS1版本
-    ├── XVSDK_jammy_amd64_XXX.deb    # ROS2版本
-vive/				      # vive
-├── doc/                             # vive使用资料    
+vive/                                 # Vive 定位系统相关内容
+├── doc/                              # Vive 使用与配置文档
+│   ├── FastUMI_Hardware_Startup_Procedure_en.docx  # FastUMI 启动流程（英文）
+│   ├── FastUMI_Hardware_Startup_Procedure_zh.docx  # FastUMI 启动流程（中文）
+│   └── vive使用教程.docx                             # Vive 基础使用教程
+
+
+xv/                                   # FastUMI 核心 SDK（XV SDK & ROS 支持）
+├── doc/                              # FastUMI 硬件 / 接口 / ROS 文档
+│   ├── README-Interfaces.md          # 硬件接口与数据说明
+│   ├── README-ros1.md                # ROS1 使用说明
+│   ├── README-ros2.md                # ROS2 使用说明
+│   ├── ros1-topic 介绍.docx          # ROS1 Topic 说明文档
+│   └── ros2-topic 介绍.docx          # ROS2 Topic 说明文档
+│
+├── scripts/                          # SDK 安装与系统配置脚本
+│   ├── 99-xvisio.rules               # udev 规则（设备权限配置）
+│   ├── README-install.md             # SDK 安装说明
+│   ├── install-ros1.sh               # 一键安装 SDK + ROS1 功能包
+│   ├── install-ros2.sh               # 一键安装 SDK + ROS2 功能包
+│   ├── install-python.sh             # Python 运行环境安装脚本
+│   └── multi-support.sh              # USB 带宽扩展（多设备运行必需）
+│
+├── sdk/                              # FastUMI 硬件 SDK 安装包（按版本归档）
+│   └── XXX/                          # SDK 版本号（以交付版本为准）
+│       ├── XVSDK_focal_amd64_XXX.deb  # Ubuntu 20.04 / ROS1
+│       └── XVSDK_jammy_amd64_XXX.deb  # Ubuntu 22.04 / ROS2   
 ```
 
 ### 文件说明
@@ -75,5 +90,7 @@ vive/				      # vive
 
 **检查：**
 删除相关进程，重新启动SDK。
+
+
 
 
